@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "843df8db-da87-4bf0-9e6d-ab838691ed7f",
+		"name": "bff_microservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25779273"
+	},
+	"item": [
+		{
+			"name": "ms-multichannel-registration",
+			"item": [
+				{
+					"name": "user-entity",
+					"item": [
+						{
+							"name": "create-user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"debitCardNumber\": \"4538290123187326\",\r\n    \"debitCardDueDate\": \"02/2027\",\r\n    \"debitCardValidationCode\": \"437\",\r\n    \"identificationDocumentType\": \"1\",\r\n    \"identificationDocumentNumber\": \"41280637\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "list-all-users",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "find-user-by-id",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "update-user",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/user/id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user",
+										"id"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete-user",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/user/id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user",
+										"id"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
